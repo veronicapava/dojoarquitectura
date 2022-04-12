@@ -14,7 +14,6 @@ public class PersonaController {
     @GetMapping()
     public ResponseEntity<Persona> getPersonlist(){
         Persona persona = new Persona("Veronica", "Pava", "Profesora");
-        System.out.println("La persona: " + persona.toString());
         return new ResponseEntity<>(persona, HttpStatus.OK);
     }
 }
